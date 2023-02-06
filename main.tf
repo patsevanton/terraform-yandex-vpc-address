@@ -1,7 +1,8 @@
+
 resource "yandex_vpc_address" "addr" {
-  name = "exampleAddress"
+  name = var.yandex_vpc_address_name
 
   external_ipv4_address {
-    zone_id = "ru-central1-a"
+    zone_id = var.zone_id
   }
 }
